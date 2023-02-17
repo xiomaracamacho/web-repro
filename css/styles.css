@@ -1,0 +1,16 @@
+/* Estilo utilizando elementos html */
+/* Selector de elemento */
+h1 {
+    /* Propiedades */
+    text-align: center;
+}
+/* Selector de clase */
+.fuente-especial {
+    color: black;
+}    
+/* Selectores de clase atados a un elemento */
+li.fuente-especial {
+    color: red;
+}
+
+   

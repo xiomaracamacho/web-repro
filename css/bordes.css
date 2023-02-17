@@ -1,0 +1,40 @@
+h1 {
+    text-align: center;
+    color: black;
+}
+.box-1 {
+    border: 8px double bisque;
+    display: flex;
+}
+.parr-style, .parr-style{
+    font-size: 1.7em;
+    margin: 10px;
+    text-align: justify;
+    border: 3px solid blue;
+    width: 300px;
+    height: 350px;
+}
+.parr-padding {
+    padding: 0 80px;
+    border-radius: 30px;
+}
+.box-2 {
+    width: 300px;
+    height: 350px;
+    border-radius: 500px;
+    background-color: blueviolet;
+    margin-left: 400px;
+    display: flex;
+}
+#uno{
+    border: 3px solid darkcyan;
+}
+
+#dos{
+    border: 3px solid hotpink;
+}
+
+#tres{
+    border: 3px solid mediumpurple;
+
+}
