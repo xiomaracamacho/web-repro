@@ -1,5 +1,7 @@
 h1 {
     text-align: center;
+    background-color: fuchsia;
+    color: azure;
 }
 div {
     display: flex;
@@ -9,10 +11,8 @@ div {
     color: black;
    
  }
- .general {
-    margin-top: 10px;
- }
-
+ 
+ 
 .box {
     cursor: pointer;
     width: 200px;
@@ -24,28 +24,28 @@ div {
 .box-1 {
     background-color: dodgerblue;
     box-shadow: 3px 3px 5px rgb(64,64,64.8);
-    margin-left: 150px;
-    margin-top: 150px;
+    margin-left: 70px;
+    margin-top: 50px;
     
 }
 .box-2 {
     background-color: aqua;
     box-shadow: 3px 3px 1px rgb(64,64,64,.8);
-    margin-left: 150px;
-    margin-top: 150px;
+    margin-left: 70px;
+    margin-top: 50px;
 
 }
 .box-3 {
      background-color: blue;
      box-shadow: 5px 5px 10px rgb(64,64,64,.8) inset; 
-     margin-left: 150px;
-     margin-top: 150px;
+     margin-left: 70px;
+     margin-top: 50px;
 }
 .box-4 {
     cursor: pointer;
     background-color: darkgray;
-    margin-left: 150px;
-    margin-top: 150px;
+    margin-left: 70px;
+    margin-top: 50px;
 }
   
 .box-4:hover {
@@ -54,8 +54,8 @@ div {
 
 .box-5 {
     background-color: blueviolet;
-    margin-top: 150px;
-    margin-left: 150px;
+    margin-top: 50px;
+    margin-left: 70px;
 }
 
 .box-5:hover {
@@ -64,11 +64,11 @@ div {
 
 .box-6 {
     background-color: brown;
-    margin-top: 150px;
-    margin-left: 150px;
+    margin-top: 50px;
+    margin-left: 70px;
 }
 
-.box-6 {
+.box-6:hover{
     box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
 }
 .todo-1 {
