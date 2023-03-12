@@ -1,8 +1,9 @@
 table{
     border: 1px solid rgb(64,64,64.8);
     border-collapse: collapse;
-    width: 90em;
-    margin: 0% auto;
+    width: 60em;
+    margin-left: 200px;
+
 
 }
 th, td {

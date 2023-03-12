@@ -1,32 +1,136 @@
-/* Estilo utilizando elementos html */
-/* Selector de elemento */
-h1 {
-    /* Propiedades */
-    text-align: center;
-    color: rgb(250, 51, 250);
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+body{
+    font-family: 'Bebas Neue', cursive;
+    overflow-x: hidden;
 }
-/* Selector de clase */
-.fuente-especial {
-    color: rgb(236, 29, 163);
-}    
-/* Selectores de clase atados a un elemento */
-li.fuente-especial {
-    color: red;
-}
-body {
-    background: #ee9ca7;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #ffdde1, #ee9ca7);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #ffdde1, #ee9ca7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 
 }
+
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    background-color: #191c32;
+    color: #fff;
+}
+
+.brand span {
+    color: aqua;
+
+}
+
+.menu {
+    display: flex;
+    width: auto;
+    justify-content: space-around;
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+.menu li {
+    list-style: none;
+}
+
+.menu a:hover{
+    background-color: aqua;
+    color:  #191c32;
+    transition: ease-in .4s;
+    cursor: pointer;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+}
+
+.brand {
+    color: aqua;
+}
+
 h2 {
-    color: rgb(250, 51, 250);
-
- }
-h3 {
-    color: rgb(250, 51, 250);
+    color: #fff;
 }
 
-  
+.main{
+    margin: 0 auto;
+    width: 70vw;
+    height: 70vh;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    
+}
+h1 {
+    font-size: 3em;
+}
 
-   
+span{
+    color: aqua;
+}
+
+.download{
+    padding: 5px 8px;
+    background-color: aqua;
+    border-radius: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    box-shadow: 1px 3px 11px -5px rgb(102, 231, 200, .69);
+}
+
+.download:hover{
+    background-color: #fff;
+    box-shadow: none;
+    border: none;
+}
+
+.main img {
+    width: 500px;
+    border: 3px solid aqua;
+    height: 350px;
+    z-index: 1;
+}
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 200px;
+    background-color: rgb(7, 189, 189);
+}
+
+.footer-content h2 {
+    font-size: 2em;
+}
+.footer-content h5 {
+    font-size: 1.5em;
+    
+}
+.sotial-network {
+    display: flex;
+    justify-content: space-evenly;
+    width: 600px;
+    margin-top: 1em;
+    color: black;
+    list-style: none;
+}
+.sotial-network i {
+    font-size: 1.5em;
+    color: #042875;
+       
+}
+
+li {
+    color: black;
+}
+
