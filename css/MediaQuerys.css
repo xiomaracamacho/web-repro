@@ -1,0 +1,77 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.main-menu {
+    width: 100%;
+    list-style: none;
+    color: white;
+    width: 100vw;
+    height: 50px;
+    margin-top: 1em;
+    text-align: right;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-bottom: 1px solid rgb(85, 84, 84);
+   
+}
+
+.item-menu {
+    color: rgb(17, 17, 17);
+    font-size: 1em;
+    left: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    display: inline-block;
+    height: 30px;
+    margin-right: 20px;
+    
+}
+
+.item-menu:hover {
+    background-color: rgb(98, 100, 102);
+    transition: ease-in .4s;
+    color: aliceblue;
+}
+
+img {
+    margin: auto;
+    margin-left: 2%;
+}
+
+.menu-hamburguesa {
+    cursor: pointer;
+    margin-left: 3%;
+}
+
+
+
+@media only screen and (max-width: 900px) {
+    .main-menu {
+        border: none;
+        box-shadow: 0 0 ;
+        text-align: center;align-self: start;
+        cursor: pointer;
+        
+  
+    }
+    .item-menu {
+        display: block;
+        padding-top: 8px;
+        padding-bottom: 1px;
+        border-bottom: 1px solid black;
+        background-color: darkgrey;
+        cursor: pointer;
+        transition: ease-in .4s;
+        
+    }
+
+    img {
+        cursor: pointer;
+    }
+
+    .nave-menu {
+        background-color: blue;
+    }
+} 

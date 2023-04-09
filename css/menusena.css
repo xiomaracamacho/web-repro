@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+.container4 {
+    font-family: 'Bebas Neue', cursive;
+    list-style: none;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    font-family: 'Roboto',sans-serif;
+    font-size: 0.9em;
+    display: flex;
+    margin-top: 10px;
+    margin-left: 5%;
+   
+    
+   
+}
+
+.container4 li a {
+    padding: 15px 20px;
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+    color: black;
+    border-right: 1px solid green;
+   
+}
+
+a {
+    text-decoration: none;
+   
+}
+.container1{
+    background-color: rgba(4, 55, 221, 0.877);
+}
+
+.container1 img {
+    margin-left: 500px;
+    cursor: pointer;
+}
+
+.container3 img {
+    margin-left: 480px;
+    cursor: pointer;
+  
+}
+
+.inicio {
+   margin-left: 75%;
+   background-color: white; 
+   list-style: none;
+   margin-top: 15px;
+   color: black;
+    
+}
+
+.container2 {
+    color: black;
+}
+
+.menu1 {
+    margin-left: 68px;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(77, 75, 75);
+    padding: 20px;
+    border: 1px solid white ;
+    font-size: 0.9em;
+    list-style: none;
+   
+}
+
+.menu1:hover {
+    background-color: gray;
+
+}
+
+.menu1 a {
+    color: #ebedee;
+
+}  
+
+.container5{
+    width: 30%;
+    margin-top: 2%;
+    
+}  
+
+.container6  {
+    margin-top: 2%;
+    margin-left: 10%;   
+}
