@@ -1,0 +1,54 @@
+*{
+ margin: 0;   
+ padding: 0;
+ background-size: cover;
+
+
+} 
+
+nav{
+    font-family: verdana, sans-serif;
+    font-size: 1em;
+    
+}
+nav ul {
+    color: white;
+    list-style: none;
+    position: absolute; 
+ 
+}
+nav ul li{
+    line-height: 70px;
+    background-color: rgb(99, 5, 136);
+    width: 270px;
+    text-align: center;
+    position: relative;
+    border: 1px solid white;
+}
+nav ul li:hover{
+    background-color: rgb(5, 53, 141);
+    color: rgb(154, 234, 248);
+
+}
+a {
+    color: white;
+    text-decoration: none;
+    padding: 0 25px;
+    display: block;
+    background-color: rgb(99, 5, 136);
+}
+nav > ul > li{
+    float: left;  
+}
+nav li li{
+    max-height: 0;
+    overflow: hidden;
+}
+nav li:hover > ul > li {
+    max-height: 500px;
+    overflow: visible;
+}
+nav ul ul ul{
+    left: 100%;
+    top: 0;
+}
