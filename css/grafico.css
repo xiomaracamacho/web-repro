@@ -1,0 +1,116 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background-color: rgb(190, 248, 248);
+}
+.caja-padre{
+    width: 40%;
+    min-width: 600px;
+    position: absolute; 
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+}
+.contenedor{
+    width: 100%;
+    padding: 30px 30px 50px;
+    background: linear-gradient(450deg, rgb(4, 124, 124), darkblue);
+    border: 2px solid;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+}
+.contenedor *{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    font-weight: 500;
+}
+h2{
+    margin-bottom: 50px;
+    letter-spacing: 2px;
+    text-align: center;
+    font-size: 34px;
+    font-weight: bold;
+}
+.grafico:not(:last-child){
+    margin-bottom: 30px;
+}
+.detalle{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.menu{
+    position: relative;
+    border: 1px solid cyan;
+    border-radius: 20px;  
+}
+/*Para poner la linea de los porcentajes */
+.menu div{
+    position: relative;
+    width: 0;
+    height: 8px;
+    border-radius: 10px;
+    background-color: cyan;
+}
+/* efecto animacion */
+#html-uno{
+    /* se pone palabra unica*/
+    animation: efecto-uno 4s forwards;
+}
+  /*Fotograma clave*/
+@keyframes efecto-uno{
+    100%{
+        width: 90%;
+    }
+}
+/* efecto animacion */
+#html-dos{
+    /* se pone palabra unica*/
+    animation: efecto-dos 2s forwards;
+}
+  /*Fotograma clave*/
+@keyframes efecto-dos{
+    100%{
+        width: 60%;
+    }
+}
+/* efecto animacion */
+#html-tres{
+    /* se pone palabra unica*/
+    animation: efecto-tres 2s forwards;
+}
+  /*Fotograma clave*/
+@keyframes efecto-tres{
+    100%{
+        width: 85%;
+    }
+}
+/* efecto animacion */
+#html-cuatro{
+    /* se pone palabra unica*/
+    animation: efecto-cuatro 2s forwards;
+}
+  /*Fotograma clave*/
+@keyframes efecto-cuatro{
+    100%{
+        width: 20%;
+    }
+}
+/* efecto animacion */
+#html-cinco{
+    /* se pone palabra unica*/
+    animation: efecto-cinco 2s forwards;
+}
+  /*Fotograma clave*/
+@keyframes efecto-cinco{
+    100%{
+        width: 45%;
+    }
+}
+
+

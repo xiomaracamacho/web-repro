@@ -9,7 +9,6 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
 
 .wrapper {
@@ -21,21 +20,18 @@ body{
 
 .brand span {
     color: aqua;
-
 }
-
 .menu {
     display: flex;
     width: auto;
     justify-content: space-around;
-}
 
+}
 .menu a {
     color: #fff;
     text-decoration: none;
     padding: 10px 20px;
 }
-
 .menu li {
     list-style: none;
 }
@@ -46,7 +42,28 @@ body{
     transition: ease-in .4s;
     cursor: pointer;
 }
+.menu1 {
+    display: flex;
+    width: auto;
+    justify-content: space-around;
 
+}  
+.menu1 a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+.menu1 li {
+    list-style: none;
+}
+
+.menu1 a:hover{
+    background-color: aqua;
+    color:  #191c32;
+    transition: ease-in .4s;
+    cursor: pointer;
+}
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -59,6 +76,7 @@ body{
 
 h2 {
     color: #fff;
+
 }
 
 .main{
@@ -126,11 +144,19 @@ span{
 }
 .sotial-network i {
     font-size: 1.5em;
-    color: #042875;
-       
+    color: #042875;    
 }
 
-li {
-    color: black;
+nav > ul > li{
+    float: left;  
 }
+nav li li{
+    max-height: 0;
+}
+nav li:hover > ul > li {
+    max-height: 500px;
+    overflow: visible;
+}
+
+
 

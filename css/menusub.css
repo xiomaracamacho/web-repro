@@ -2,10 +2,7 @@
  margin: 0;   
  padding: 0;
  background-size: cover;
-
-
 } 
-
 nav{
     font-family: verdana, sans-serif;
     font-size: 1em;
@@ -28,7 +25,6 @@ nav ul li{
 nav ul li:hover{
     background-color: rgb(5, 53, 141);
     color: rgb(154, 234, 248);
-
 }
 a {
     color: white;
