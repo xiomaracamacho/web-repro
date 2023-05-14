@@ -18,6 +18,7 @@ body{
 .contenedor{
     width: 100%;
     padding: 30px 30px 50px;
+    /* para poner dos tonos de fondo */
     background: linear-gradient(450deg, rgb(4, 124, 124), darkblue);
     border: 2px solid;
     border-radius: 10px;
