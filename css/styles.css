@@ -13,7 +13,7 @@ body{
 
 .wrapper {
     width: 100vw;
-    height: 100vh;
+    height: 95vh;
     background-color: #191c32;
     color: #fff;
 }
@@ -112,9 +112,9 @@ span{
 }
 
 .main img {
-    width: 500px;
+    width: 400px;
     border: 3px solid aqua;
-    height: 350px;
+    height: 250px;
     z-index: 1;
 }
 .footer{

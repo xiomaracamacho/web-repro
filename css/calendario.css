@@ -1,0 +1,88 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+h1{
+    text-align: center;
+    color: #4d0303;
+    background-color:hsl(114, 93%, 28%);
+    margin-top: 4%;
+    padding: 10px;
+}
+.calendario {
+    display: grid;
+    grid-template-columns: repeat(7, 3fr);
+    gap: 9px;
+    max-width: 800px;
+    height: 400px;
+    margin: 0 auto;
+    margin-top: 5%;
+}
+.di {
+    text-align: center;
+    padding: 10px;
+    background: linear-gradient(450deg, rgb(180, 179, 179), rgb(48, 47, 47));
+    color: white;
+}
+.di:hover{
+    box-shadow: rgb(83, 83, 83) 0px 5px 15px;
+    cursor: pointer;
+    background: #a5a4a4;
+}
+.dia {
+    text-align: center;
+    padding: 10px;
+    background: linear-gradient(450deg, rgb(235, 8, 8), rgb(100, 4, 4));
+    color: white;
+}
+.dia:hover{
+    box-shadow: rgb(83, 83, 83) 0px 5px 15px;
+    cursor: pointer;
+    background: #7c0303;
+}
+.diaa {
+    text-align: center;
+    padding: 10px;
+    background-color: #fc6262;
+    color: white;
+}
+.diaa:hover{
+    box-shadow: rgb(83, 83, 83) 0px 5px 15px;
+    cursor: pointer;
+    background: #ec4b4b;
+}
+.dia7 {
+    text-align: center;
+    padding: 10px;
+    background: linear-gradient(450deg, rgb(5, 226, 42), rgb(2, 97, 14));
+    color: white;
+}
+.dia7:hover{
+    box-shadow: rgb(83, 83, 83) 0px 5px 15px;
+    cursor: pointer;
+    background: #02860d;
+}
+.dia25 {
+    text-align: center;
+    padding: 10px;
+    background: linear-gradient(450deg, rgb(5, 226, 42), rgb(2, 97, 14));
+    color: white;
+}
+.dia25:hover{
+    box-shadow: rgb(83, 83, 83) 0px 5px 15px;
+    cursor: pointer;
+    background: #02860d;
+}
+.dia31 {
+    text-align: center;
+    padding: 10px;
+    background: linear-gradient(450deg, rgb(5, 226, 42), rgb(2, 97, 14));
+    color: white;
+}
+.dia31:hover{
+    box-shadow: rgb(83, 83, 83) 0px 5px 15px;
+    cursor: pointer;
+    background: #02860d;
+}
+
+  
