@@ -2,6 +2,9 @@
     padding: 0;
     margin: 0;
 }
+body{
+    background: linear-gradient(450deg, rgb(245, 238, 238), rgb(219, 215, 215));
+}
 h1{
     text-align: center;
     color: #4d0303;
@@ -28,10 +31,11 @@ h1{
     box-shadow: rgb(83, 83, 83) 0px 5px 15px;
     cursor: pointer;
     background: #a5a4a4;
+    color: black;
 }
 .dia {
-    text-align: center;
-    padding: 10px;
+    text-align: left;
+    padding: 15px;
     background: linear-gradient(450deg, rgb(235, 8, 8), rgb(100, 4, 4));
     color: white;
 }
@@ -52,8 +56,8 @@ h1{
     background: #ec4b4b;
 }
 .dia7 {
-    text-align: center;
-    padding: 10px;
+    text-align: left;
+    padding: 4px;
     background: linear-gradient(450deg, rgb(5, 226, 42), rgb(2, 97, 14));
     color: white;
 }
@@ -63,10 +67,15 @@ h1{
     background: #02860d;
 }
 .dia25 {
-    text-align: center;
-    padding: 10px;
+    text-align: left;
+    padding: 5px;
     background: linear-gradient(450deg, rgb(5, 226, 42), rgb(2, 97, 14));
     color: white;
+    list-style: none;
+}
+li{
+    list-style: none;
+    text-align: right;
 }
 .dia25:hover{
     box-shadow: rgb(83, 83, 83) 0px 5px 15px;
@@ -74,8 +83,8 @@ h1{
     background: #02860d;
 }
 .dia31 {
-    text-align: center;
-    padding: 10px;
+    text-align: left;
+    padding: 3px;
     background: linear-gradient(450deg, rgb(5, 226, 42), rgb(2, 97, 14));
     color: white;
 }
@@ -84,5 +93,16 @@ h1{
     cursor: pointer;
     background: #02860d;
 }
+.dia-uno{
+    text-align: left;
+    padding: 18px;
+    background: linear-gradient(450deg, rgb(235, 8, 8), rgb(100, 4, 4));
+    color: white;
+    grid-column-end: 6;
+}
+.dia-uno:hover{
+    box-shadow: rgb(83, 83, 83) 0px 5px 15px;
+    cursor: pointer;
+    background: #7c0303;
+}
 
-  
