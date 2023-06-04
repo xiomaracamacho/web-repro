@@ -1,7 +1,6 @@
 *{
     margin : 0;
     padding: 0;
-
 }
 h1 {
     text-align: center;
@@ -10,21 +9,18 @@ h1 {
 .todo-1 {
    background-color: rgb(201, 163, 210);
    max-width: 100%;
-
    justify-content: center;
    gap: 100px;
 }
 .todo-2 {
     background-color: rgb(201, 163, 210);
     max-width: 100%;
- 
     justify-content: center;
     gap: 100px;
 }
 .todo-3 {
     background-color: rgb(201, 163, 210);
     max-width: 100%;
- 
     justify-content: center;
     gap: 100px;
 }
@@ -50,5 +46,4 @@ label {
     display: flex;
     justify-content: center;
     padding-right: 3em;
-
 }
