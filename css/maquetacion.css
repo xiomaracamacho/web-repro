@@ -1,0 +1,189 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+nav{
+    height: 70px;
+}
+.img1{
+    background-image: url("../img/img1.jfif");
+    margin-left: 15%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 200px;
+ 
+}
+.img2{
+    background-image: url("../img/img2.jfif");
+    margin-left: 15%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 200px;
+  
+}
+.img3{
+    background-image: url("../img/img3.jfif");
+    margin-left: 15%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 200px;
+  
+}
+.img4{
+    background-image: url("../img/img4.jfif");
+    margin-left: 15%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 200px;
+}
+.img5{
+    background-image: url("../img/img5.jfif");
+    margin-left: 15%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 200px;
+}
+.img6{
+    background-image: url("../img/img6.jfif");
+    margin-left: 15%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 200px;
+}
+.main-img-box{
+    background-image: url("../img/maqui1.jpg");
+    width: 115%;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: white;
+    font-size: 2.2em;
+    font-weight: 500px;
+}
+.article-box{
+    align-items: center;
+    width: 100%;
+    gap: 50px;
+    height: 300px;
+    display: grid;
+    grid-template: "empty-izq article1 article2 article3" 600px 
+                   "empty-izq article4 article5 article6" 300px / 
+                        1fr    450px     450px     450px   1fr;
+}
+.article1{
+    grid-area: article1;
+ 
+}
+.article2{ 
+    grid-area: article2;
+}
+.article3{
+    grid-area: article3;
+}
+.article4{
+    grid-area: article4;
+}
+.article5{
+    grid-area: article5;
+}
+.article6{
+    grid-area: article6;
+} 
+.text-conten{
+    color: black;
+    font-size: 1.3em;
+    line-height: 1.6em;
+    text-align: justify;
+}
+@media only screen and (max-width: 780px){
+.main-img-box {
+    height: 300px;
+}
+}
+@media only screen and (max-width: 1070px){
+.main-img-box {
+    height: 450px;
+}
+}
+@media only screen and (max-width: 1500px){
+.img-article {
+    height: 400px;
+}
+}
+@media only screen and (max-width: 1550px){
+.img-article {
+    height: 300px;
+}
+}
+@media only screen and (max-width: 1300px){
+.article-box {
+    gap: 50px;
+    grid-template: "empty-izq article1 article2 empty-der" auto
+                    "empty-izq article3  article4 empty-der" auto
+                    "empty-izq article5  article6 empty-der" auto /
+                    1fr 400px 400px 1fr;
+ }
+}
+@media only screen and (max-width: 950px){
+    .article-box {
+        gap: 80px;
+        grid-template: "empty-izq article1 article2 empty-der" auto
+                        "empty-izq article3  article4 empty-der" auto
+                        "empty-izq article5  article6 empty-der" auto /
+                        1fr 650px 650px 1fr;
+}
+}
+@media only screen and (max-width: 900px){
+    .article-box {
+        gap: 30px;
+        grid-template: "empty-izq article1 empty-der" auto
+                       "empty-izq article2 empty-der" auto
+                       "empty-izq article3 empty-der" auto
+                       "empty-izq article4 empty-der" auto
+                       "empty-izq article5 empty-der" auto
+                       "empty-izq article6 empty-der" auto /
+                        1fr 420px 1fr;
+    }
+}
+    @media only screen and (max-width: 1300px){
+        .article-box {
+            gap: 80px;
+            grid-template: "empty-izq article1 article2 empty-der" auto
+                            "empty-izq article3  article4 empty-der" auto
+                            "empty-izq article5  article6 empty-der" auto /
+                            1fr 650px 1fr;
+    }
+    .img-article{
+        height: 300px;
+    }
+}
+@media only screen and (max-width: 1050px){
+    .article-box {
+        grid-template: "empty-izq article1 empty-der" auto
+                       "empty-izq article2 empty-der" auto
+                       "empty-izq article3 empty-der" auto
+                       "empty-izq article4 empty-der" auto
+                       "empty-izq article5 empty-der" auto
+                       "empty-izq article6 empty-der" auto /
+                        1fr 650px 1fr;
+    }
+    .img-article{
+        height: 465px;
+    }
+}
+@media only screen and (max-width: 1050px){
+.article-box {
+    grid-template: "empty-izq article1 empty-der" auto
+                   "empty-izq article2 empty-der" auto
+                   "empty-izq article3 empty-der" auto
+                   "empty-izq article4 empty-der" auto
+                   "empty-izq article5 empty-der" auto
+                   "empty-izq article6 empty-der" auto /
+                    1fr 420px 1fr;
+    }
+}
+.img-article{
+    height: 300px;
+}
