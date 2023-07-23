@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.img-principal {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.porsche-gt4-visible {
+    position: fixed;
+    width: 80%;
+    margin-left: 10%;
+    left: 0;
+    transition: all 1200ms;
+}
+.porsche-gt4-hidden {
+    position: fixed;
+    width: 80%;
+    margin-left: 10%;
+    left: -100%;
+    transition: all 1200ms;
+}
+.porsche-911-visible {
+    position: fixed;
+    width: 80%;
+    margin-left: 10%;
+    left: 0;
+    transition: all 1200ms;
+}
+.porsche-911-hidden-left {
+    position: fixed;
+    width: 80%;
+    margin-left: 10%;
+    left: -100%;
+    transition: all 1200ms;
+}
+.porsche-911-hidden-right {
+    position: fixed;
+    width: 80%;
+    margin-left: 10%;
+    left: 100%;
+    transition: all 1200ms;
+}
+.porsche-cayenne-visible {
+    position: fixed;
+    width: 80%;
+    margin-left: 10%;
+    left: 0;
+    transition: all 1200ms;
+}
+.porsche-cayenne-hidden {
+    position: fixed;
+    width: 80%;
+    margin-left: 10%;
+    left: 100%;
+    transition: all 1200ms;
+}
+.left-arrow {
+    position: absolute;
+    top: 380px;
+    left: 10px;
+    cursor: pointer;
+}
+/* .left-arrow.. {
+    position: fixed;
+    width: 80%;
+    margin-left: 10%;
+    left: -100%;
+} */
+.right-arrow {
+    position: absolute;
+    right: 0;
+    top: 380px;
+    cursor: pointer;
+}
+
