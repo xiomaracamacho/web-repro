@@ -1,0 +1,195 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', sans-serif;
+}
+
+nav{
+    height: 80px;
+
+}
+body{
+    background-color: black;
+}
+
+.main-img-box{    
+    height: 100px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    color: rgb(199, 152, 152);
+    font-size: 1em;
+    font-weight: 700;
+}
+.main-img-box:hover{
+    color: aqua;
+    cursor: pointer;
+}
+.uno{
+    height: 350px;
+    width: 30%;
+}
+.links{
+    margin-left: 200px;
+    margin-top: 30px;
+    font-size: 1em;
+    display: flex;
+}
+i{
+    margin-top: 10px;
+    font-size: 1.5em;
+}
+.img-article{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.img-article:hover{
+    box-shadow: rgba(99, 97, 97, 0.25) 0px 54px 55px, rgba(97, 96, 96, 0.12) 0px -12px 30px, rgba(126, 126, 126, 0.12) 0px 4px 6px, rgba(105, 103, 103, 0.17) 0px 12px 13px, rgba(99, 97, 97, 0.09) 0px -3px 5px;
+}
+/* .main-img-box{
+    height: 500px;
+    width: 100%;
+    background-color: darkcyan;
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.2em;
+    font-weight: 800;
+}
+ */
+img{border-radius: 10PX;
+    width: 100%; 
+}
+.text-content{
+    text-align: center;
+    margin-left: 40%;
+    width: 70px;
+    color: rgb(252, 246, 246);
+    font-size: 1.2em;
+    padding: 10px;
+    background-color: rgb(231, 23, 23);
+    cursor: pointer;
+}
+.text-content:hover{
+    color: black;
+    background-color: aqua;
+    box-shadow: rgba(255, 255, 255, 0.781) 0px 3px 8px;
+}
+.text-article{
+    word-spacing: 0.2em;
+    line-height: 1.2em;
+    letter-spacing: 0.1em;
+}
+
+.article-box{
+    width: 100%;
+    margin-top: 40px;
+    display: grid;
+    gap: 70px;
+    grid-template: "empty-izq article-1 article-2 article-3 empty-der" auto
+                    "empty-izq article-4 article-5 article-6 empty-der" auto / 
+    1fr 420px 420px 420px 1fr;
+    /* grid-template-columns: 1fr 3fr 3fr 3fr 1fr;
+    grid-template-rows: 350px; */
+}
+
+.article-1{
+    grid-area: article-1;
+}
+
+.article-2{
+    grid-area: article-2;
+}
+
+.article-3{
+    grid-area: article-3;
+}
+
+.article-4{
+    grid-area: article-4;
+}
+
+.article-5{
+    grid-area: article-5;
+}
+
+.article-6{
+    grid-area: article-6;
+}
+
+
+@media only screen and (max-width:1560px){
+    .article-box{
+        gap: 30px;
+    }
+}
+
+@media only screen and (max-width:1350px){
+    .article-box{
+        gap: 10px;
+        grid-template: "empty-izq article-1 article-2 article-3 empty-der" auto
+                    "empty-izq article-4 article-5 article-6 empty-der" auto / 
+                    1fr 400px 400px 400px 1fr;
+    }
+    .img-article{
+        height: 286px;
+    }
+}
+
+@media only screen and (max-width:1300px){
+    .article-box{
+        gap: 80px;
+        grid-template: "empty-izq article-1 article-2 empty-der" auto
+        "empty-izq article-3 article-4  empty-der" auto
+        "empty-izq article-5 article-6  empty-der" auto  / 
+        1fr 420px 420px 1fr; 
+    }
+    .img-article{
+        height: 300px;
+    }
+}
+
+@media only screen and (max-width:1050px){
+    .article-box{
+        grid-template: "empty-izq article-1 empty-der" auto
+        "empty-izq article-2 empty-der" auto
+        "empty-izq article-3 empty-der" auto
+        "empty-izq article-4 empty-der" auto 
+        "empty-izq article-5 empty-der" auto 
+        "empty-izq article-6 empty-der" auto   / 
+        1fr 650px 1fr; 
+    }
+    .img-article{
+        height: 465px;
+    }
+}
+
+@media only screen and (max-width:760px){
+    .article-box{
+        grid-template: "empty-izq article-1 empty-der" auto
+        "empty-izq article-2 empty-der" auto
+        "empty-izq article-3 empty-der" auto
+        "empty-izq article-4 empty-der" auto 
+        "empty-izq article-5 empty-der" auto 
+        "empty-izq article-6 empty-der" auto   / 
+        1fr 450px 1fr; 
+    }
+    .img-article{
+        height: 320px;
+    }
+}
+
+@media only screen and (max-width:500px){
+    .article-box{
+        gap: 0;
+        grid-template: "empty-izq article-1 empty-der" auto
+        "empty-izq article-2 empty-der" auto
+        "empty-izq article-3 empty-der" auto
+        "empty-izq article-4 empty-der" auto 
+        "empty-izq article-5 empty-der" auto 
+        "empty-izq article-6 empty-der" auto   / 
+        1fr 400px 1fr; 
+    }.img-article{
+        height: 286px;
+    }
+}
