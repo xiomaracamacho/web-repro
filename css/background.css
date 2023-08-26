@@ -2,6 +2,12 @@
     padding: 0;
     margin: 0;
 }
+body {
+    background-image: url('ruta_de_la_imagen.jpg');
+    background-size: cover; /* Opciones de tamaño de fondo */
+    background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */
+}
+
 h1{
     text-align: center;
 }

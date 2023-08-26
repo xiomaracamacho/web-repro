@@ -1,69 +1,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 body{
-    font-family: 'Bebas Neue', cursive;
+    
     overflow-x: hidden;
+    text-decoration: none;
 }
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    list-style: none;
+}
+.menu{
+    list-style: none;
+    text-decoration: none;
+    font-size: 2em;   
+    color: white;
+    padding: 15px;
+    cursor: pointer;
+}
+.menu:hover{
+    color: aqua;
+    cursor: pointer;
 }
 
 .wrapper {
     width: 100vw;
-    height: 95vh;
-    background-color: #191c32;
+    height: 80vh;
+    background-color: #000b30;
     color: #fff;
 }
 
 .brand span {
     color: aqua;
 }
-.menu {
-    display: flex;
-    width: auto;
-    justify-content: space-around;
 
-}
-.menu a {
-    color: #fff;
-    text-decoration: none;
-    padding: 10px 20px;
-}
-.menu li {
-    list-style: none;
-}
 
-.menu a:hover{
-    background-color: aqua;
-    color:  #191c32;
-    transition: ease-in .4s;
-    cursor: pointer;
-}
-.menu1 {
-    display: flex;
-    width: auto;
-    justify-content: space-around;
-
-}  
-.menu1 a {
-    color: #fff;
-    text-decoration: none;
-    padding: 10px 20px;
-}
-
-.menu1 li {
-    list-style: none;
-}
-
-.menu1 a:hover{
-    background-color: aqua;
-    color:  #191c32;
-    transition: ease-in .4s;
-    cursor: pointer;
-}
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -75,7 +47,8 @@ body{
 }
 
 h2 {
-    color: #fff;
+    color: #ffffff;
+    font-size: 3em;
 
 }
 
@@ -98,13 +71,14 @@ span{
 
 .download{
     padding: 5px 8px;
-    background-color: aqua;
+    background: #1FA2FF;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #A6FFCB, #12D8FA, #1FA2FF);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #A6FFCB, #12D8FA, #1FA2FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     border-radius: 10px;
-    margin-top: 10px;
+    margin-top: 20px;
     cursor: pointer;
     box-shadow: 1px 3px 11px -5px rgb(102, 231, 200, .69);
 }
-
 .download:hover{
     background-color: #fff;
     box-shadow: none;
@@ -113,9 +87,13 @@ span{
 
 .main img {
     width: 400px;
-    border: 3px solid aqua;
-    height: 250px;
+    border: 2px solid aqua;
+    height: 380px;
     z-index: 1;
+    margin-left: 200px;
+}
+.main img:hover{
+    box-shadow: rgba(57, 243, 243, 0.25) 0px 54px 55px, rgba(161, 157, 157, 0.12) 0px -12px 30px, rgba(156, 154, 154, 0.12) 0px 4px 6px, rgba(196, 195, 195, 0.17) 0px 12px 13px, rgba(168, 166, 166, 0.09) 0px -3px 5px;
 }
 .footer{
     display: flex;
@@ -124,29 +102,28 @@ span{
     align-items: center;
     width: 100vw;
     height: 200px;
-    background-color: rgb(7, 189, 189);
-}
+    background: #1FA2FF;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #08abc0, aqua, #1FA2FF);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #08abc0,aqua, #1FA2FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
+}
 .footer-content h2 {
     font-size: 2em;
 }
 .footer-content h5 {
-    font-size: 1.5em;
-    
+    font-size: 1.5em;   
 }
 .sotial-network {
     display: flex;
     justify-content: space-evenly;
     width: 600px;
-    margin-top: 1em;
-    color: black;
+    margin-top: 2em;
     list-style: none;
 }
 .sotial-network i {
-    font-size: 1.5em;
-    color: #042875;    
+    font-size: 3em;  
+    color: rgb(12, 3, 141);
 }
-
 nav > ul > li{
     float: left;  
 }
@@ -158,5 +135,7 @@ nav li:hover > ul > li {
     overflow: visible;
 }
 
-
-
+h3{
+    color: rgb(13, 76, 211);
+    font-size: 3em;
+}
