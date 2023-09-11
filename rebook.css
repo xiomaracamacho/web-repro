@@ -1,0 +1,568 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.oferta {
+    width: 100%;
+    height: 30px;
+    background-color: #284494;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.navbar {
+    position: sticky;
+    top: 30px;
+    z-index: 999;
+    width: 100%;
+    height: 64px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+
+}
+
+.barra {
+    display: none;
+}
+
+.logo {
+    margin-left: 186px;
+    position: absolute;
+}
+
+.ul-1 {
+    margin-top: -5px;
+    display: flex;
+    list-style: none;
+    margin-left: 312px;
+    gap: 25px;
+    font-size: 14.5px;
+    font-family: neue-plak;
+    letter-spacing: 1px;
+}
+
+
+.ul-2 {
+    display: flex;
+    list-style: none;
+    margin-right: 210px;
+    gap: 25px;
+    font-size: 13px;
+    font-family: neue-plak;
+    cursor: pointer;
+}
+
+.ul-2 li i {
+    font-size: 14px;
+}
+
+.text-ul {
+     margin-right: -14px;
+}
+
+.text-ul-2 {
+    margin-right: -10px;
+}
+
+.red-word {
+    color: red;
+}
+
+@font-face {
+    font-family: neue-plak;
+    src: url("fonts/neue/Neue\ Plak\ Regular.ttf");
+}
+
+.container-red {
+    width: 100%;
+    height: 72px;
+    background-color: red;
+}
+
+.img-principal {
+    width: 100%;
+    height: 791.5px;
+    background-image: url("img/img-principal.webp");
+    background-size: cover;
+}
+
+.container-principal {
+    padding-top: 309px;
+    margin-left: 188px;
+    color: #fff;
+}
+
+h1 {
+    font-family: neue;
+    font-size: 40px;
+    letter-spacing: 1px;
+}
+
+p {
+    margin-top: 5px;
+    font-size: 18px;
+    font-family: neue1;
+}
+
+.container-principal button {
+    margin-top: 25px;
+    width: 158px;
+    height: 42px;
+    border: 1px solid #000;
+    font-family: neue;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.container-principal button:hover {
+    color: #fff;
+    background: #000;
+}
+
+h2 {
+    margin-top: 50px;
+    font-family: neue;
+    font-size: 29px;
+    margin-left: 31px;
+    color: #000;
+}
+
+
+
+@font-face {
+    font-family: neue1;
+    src: url("fonts/neue/Neue\ Plak\ Bold.ttf");
+}
+
+@font-face {
+    font-family: neue;
+    src: url("fonts/neue/Neue\ Plak\ Extended\ Bold.ttf");
+}
+
+.carrusel {
+    margin-top: 48px;
+    width: 97%;
+    height: 520px;
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+    background-color: #000;
+    
+}
+
+.generos{
+    margin-top: 82px;
+    width: 100%;
+    height: 795px;
+    display: flex;
+    margin-bottom: 6px;
+}
+
+.mujer, .hombre, .niño {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.generos h3 {
+    font-size: 40px;
+    font-family: neue1;
+    color: #fff;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.mujer {
+    background-image: url("img/mujer.webp");
+    width: 630px;
+    height: 100%;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.hombre {
+    width: 630px;
+    height: 100%;
+    background-image: url("img/hombre.webp");
+    margin-left: 6px;
+    background-size: cover;
+}
+
+.niño {
+    width: 629px;
+    height: 100%;
+    background-image: url("img/niño.webp");
+    margin-left: 7px;
+    background-size: cover;
+}
+
+.reebok-ltd {
+    padding-top: 8px;
+    width: 100%;
+    height: 795px;
+    background-image: url("img/reebok-ltd.webp");
+    background-size: cover;
+}
+
+.container-ltd {
+    margin-left: 187px;
+}
+
+.container-ltd h1 {
+    margin-top: 309px;
+    font-size: 39px;
+    font-family: neue;
+}
+
+.container-ltd p {
+    margin-top: 10.5px;
+    color: #2b2b2b;
+}
+
+.container-ltd button {
+    margin-top: 27px;
+    width: 162px;
+    height: 44px;
+    border: 1.5px solid #000;
+    background-color: #ffffff;
+    font-size: 17px;
+    font-family: regular;
+    color: #0d0d0d;
+    cursor: pointer;
+}
+
+.container-ltd button:hover {
+    color: #ffffff;
+    background-color: #000;
+}
+
+.carrusel-2 {
+    margin-top: 48px;
+    width: 97%;
+    height: 520px;
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+    background-color: #000;
+}
+
+.back-to-school {
+    margin-top: 82px;
+    width: 100%;
+    height: 792px;
+    display: flex;
+}
+
+.back-1 {
+    width: 49.8%;
+    height: 100%;
+    background-image: url("img/back-1.webp");
+    background-size: cover;
+}
+
+.back-2 {
+    margin-left: 6px;
+    width: 49.8%;
+    height: 100%;
+    background-image: url("img/back-2.webp");
+    background-size: cover;
+}
+
+.vestido-lux {
+    margin-top: 6px;
+    width: 100%;
+    height: 793px;
+    background-image: url("img/vestido.webp");
+    background-size: cover;
+}
+
+.container-lux {
+    padding-top: 293px;
+    margin-left: 187px;
+}
+
+.container-lux h1 {
+    font-size: 40px;
+    color: #ffffff;
+    white-space: nowrap;
+}
+
+.word-spacing {
+    white-space: pre-line;
+}
+
+.container-lux p{
+    color: #ffffff;
+}
+
+.container-lux button {
+    margin-top: 27px;
+    width: 162px;
+    height: 44px;
+    border: 1.5px solid #000;
+    background-color: #ffffff;
+    font-size: 17px;
+    font-family: regular;
+    color: #0d0d0d;
+    cursor: pointer;
+}
+
+
+.container-lux button:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.registro {
+    width: 100%;
+    height: 155px;
+    background-color: red;
+    align-items: center;
+    display: flex;
+}
+
+.registro .content {
+    margin-left: 170px;
+    display: flex;
+}
+
+.registro h1 {
+    font-size: 33.4px;
+    color: #fff;
+}
+
+.registro button {
+    margin-left: 33px;
+    width: 445px;
+    height: 43px;
+    background-color: #000;
+    color: #fff;
+    font-family: regular;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.registro button:hover {
+    background-color: #284494;
+}
+
+.asistencia {
+    width: 100%;
+    height: 269.56px;
+    background-color: #ffffff;
+}
+
+.last {
+    width: 100%;
+    height: 89.19px;
+    background-color: #284494;
+}
+
+
+
+
+@font-face {
+    font-family: regular;
+    src: url("fonts/neue/Neue\ Plak\ Regular.ttf");
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1400px) {
+
+    .logo {
+        margin-left: 22px;
+        position: absolute;
+    }
+    
+    .ul-1 {
+        margin-top: -5px;
+        display: flex;
+        list-style: none;
+        margin-left: 144px;
+        gap: 16.8px;
+        font-size: 14.5px;
+        font-family: neue-plak;
+        letter-spacing: 1px;
+    }
+
+    .ul-2 {
+        display: flex;
+        list-style: none;
+        margin-right: 30px;
+        gap: 25px;
+        font-size: 13px;
+        font-family: neue-plak;
+        cursor: pointer;
+    }
+
+    .img-principal {
+        height: 581px;
+    }
+
+    .container-principal {
+        padding-top: 202px;
+        margin-left: 24px;
+        color: #fff;
+    }
+
+    h2 {
+        margin-left: 20px;
+    }
+    
+    .carrusel {
+        height: 422px;
+    }
+
+    .generos {
+        height: 590px;
+    }
+
+    .reebok-ltd {
+        height: 590px;   
+    }
+
+    .container-ltd {
+        margin-left: 25px;
+    }
+
+    .container-ltd h1 {
+        margin-top: 200px;
+    }
+
+    .carrusel-2 {
+        height: 422px;
+    }
+
+    .back-to-school {
+        height: 580px;
+    }
+
+    .vestido-lux {
+        height: 587px;
+    }
+
+    .container-lux {
+        padding-top: 200px;
+        margin-left: 24px;
+    }
+    .registro {
+        height: 180px;
+    }
+    .registro h1 {
+        font-size: 35px;
+    }
+    .registro .content {
+        margin-left: 20px;
+    }
+
+    .registro button {
+        margin-top: 15px;
+        margin-right: 100px;
+        width: 320px;
+        height: 40px;
+        background-color: #000;
+        color: #fff;
+        font-family: regular;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+    }
+    
+}
+
+@media (max-width: 1000px) {
+
+    .barra  {
+        display: block;
+        font-size: 11px;
+        margin-right: 800px;
+        cursor: pointer;
+        position: relative;
+    }
+
+    .logo {
+        margin-left: 460px;
+    }
+
+    .navbar {
+        
+        height: 56px;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .img-principal {
+        height: 416px;
+    }
+
+    .ul-1 {
+        margin-top: 400px;
+        display: block;
+        color: #fff;
+        margin-left: -200%;
+    }
+
+    .container-principal {
+        padding-top: 130px;
+        margin-left: 24px;
+        color: #fff;
+    }
+
+    .container-principal h1 {
+        font-size: 31px;
+    }
+
+
+    h2 {
+        margin-top: 26px;
+        margin-left: 22px;
+    }
+
+    .carrusel {
+        margin-top: 19px;
+        margin-left: 22px;
+        height: 350px;
+    }
+
+    .generos {
+        height: 415px;
+    }
+   
+    .generos h3 {
+        font-size: 32px;
+    }
+
+    .reebok-ltd {
+        height: 380px;
+    }
+
+    .registro {
+        display: block;
+    }
+
+    .registro h1 {
+        font-size: 25px;
+    }
+    
+}
