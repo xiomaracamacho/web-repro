@@ -371,21 +371,6 @@ h2 {
     font-family: regular;
     src: url("fonts/neue/Neue\ Plak\ Regular.ttf");
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media (max-width: 1400px) {
 
     .logo {
@@ -565,4 +550,64 @@ h2 {
         font-size: 25px;
     }
     
+}
+
+#carousel-container {
+    width: 98%;
+    overflow: hidden; 
+    position: relative; 
+    text-align: center;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    scrollbar-width: none;
+
+}
+
+#carousel {
+    display: flex;
+    transition: transform 0.2s ease-in-out;  
+}
+.slide {
+    flex: 0 0 200px;
+    margin-right: 1px;
+    position: relative;
+    cursor: pointer;
+   
+}
+
+.slide img {
+    width: 500px;
+    height: 450px;
+}
+
+.text-container {
+  display: inline-block;
+  position: relative;
+}
+
+.text {
+  font-size: 15px;
+  transition: color 0.3s;
+}
+
+.text-container:hover .text {
+  color: red;
+}
+
+.bar {
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: rgb(255, 8, 0);
+  transition: width 0.3s; 
+  left: 1px; 
+}
+
+.text-container:hover .bar {
+  width: 100%; 
+}
+
+#prev-button,
+#next-button {
+    cursor: pointer;
 }
