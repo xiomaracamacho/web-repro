@@ -3,8 +3,29 @@
     padding: 0;
     box-sizing: border-box;
 }
+p {
+    margin-top: 5px;
+    font-size: 18px;
+    font-family: neue1;
+}
 
+#carousel {
+    display: flex;
+    gap: 13px;
+    transition: transform 0.2s ease-in-out;  
 
+}
+
+#carousel2 {
+    display: flex;
+    gap: 13px;
+    transition: transform 0.2s ease-in-out; 
+
+}
+.text-container h5 {
+    font-size: 16px;
+
+}
 
 .oferta {
     width: 100%;
@@ -366,9 +387,6 @@ h2 {
     background-color: #284494;
 }
 
-
-
-
 @font-face {
     font-family: regular;
     src: url("fonts/neue/Neue\ Plak\ Regular.ttf");
@@ -555,6 +573,7 @@ h2 {
 }
 
 #carousel-container {
+    margin-top: 48px;
     width: 98%;
     overflow: hidden; 
     position: relative; 
@@ -578,8 +597,8 @@ h2 {
 }
 
 .slide img {
-    width: 500px;
-    height: 450px;
+    width: 400px;
+    height: 400px;
 }
 
 .text-container {
@@ -612,9 +631,4 @@ h2 {
 #prev-button,
 #next-button {
     cursor: pointer;
-<<<<<<< HEAD
 }
-/* */
-=======
-}
->>>>>>> 37b5816260f7946e2bd1ac82526c5b2ce4b7bf04
