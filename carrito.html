@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito</title>
+    <link rel="stylesheet" href="carrito.css">
+</head>
+<body>
+
+    <div class="main-box" >
+        <div class="box-subtotal">
+            <label class="subtotal" >Subtotal <span id="subTotal" ></span> cop $<span id="valorSubTotal" class="precio"> 0</span></label>
+        </div>
+            <div class="btn-pago-productos">
+                <label>Proceder al pago ( <span id="cantProductos" > 0 productos</span>)</label>
+            </div>
+                <div class="box-img-producto">
+                    <img class="img-producto" src="img/libro.jpg">
+                </div>
+                    <div class="info-producto">
+                        <label>Javascript the Definite guide <br>
+                                Master de world's most-used <br>
+                                Programming language. <br><br>
+                        </label>
+                        <label>por David Flanagan<br><br></label>
+                        <label>Tapa blanda<br><br></label>
+                        <label class="text-info" >cop<span class="signo-peso"> $</span><span id="valorUnitarioProducto" class="valor-unitario-producto">0</span></label><br><br>
+                        <div>
+                            <input class="button" id="boton" value="Eliminar">
+                        </div>
+                        
+                    </div>
+                  
+                <div class="num-select">
+                    <div id="numRestar" class="num-restar">-</div>
+                    <div id="numView" class="num-view">0</div>
+                    <div id="numSumar" class="num-sumar">+</div>
+                </div>
+
+            
+    </div>
+    <script src="carrito.js" ></script>
+    
+</body>
+</html>

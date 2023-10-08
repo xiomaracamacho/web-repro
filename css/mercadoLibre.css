@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    height: 90px;
+    display: grid;
+    background-color: #fff159;
+    grid-template: "logo input-busqueda   hamburguer-menu    carrito" /
+                    80px  1fr              80px              80px  ;
+}
+.logo{
+    grid-area: logo;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+img{
+    width: 100%;
+    margin-left: 20%;
+}
+
+.box-input-busqueda{
+    grid-area: input-busqueda;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.input-busqueda{
+    border-radius: 20px;
+    margin-top: 15px;
+    height: 10%;
+    width: 60%;
+    outline: none;
+    border: none;
+    font-size: 1.em;
+}
+.hamburguer-menu {
+    grid-area: hamburguer-menu;
+  
+}
+.carrito{
+    grid-area: carrito;
+
+}
+.icon-header{
+    height: 40px;
+    margin-top: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+}
+.main-content{
+    display: grid;
+    height: 300px;
+    grid-template: "box-producto box-inf" /
+                        1fr         1fr;
+}
+.box-producto{
+    grid-area: box-producto;
+}
