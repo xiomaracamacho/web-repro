@@ -11,13 +11,33 @@ class Automovil {
         this.imagen = imagen;
     }
 }
-let auto1 = new Automovil("Toyota", "TXL", 150000000, "2021 ·", " 25.400 km ·", " Pitalito-Huila", "img/Toyota.png");
+let auto1 = new Automovil("Toyota ", " TXL", 150000000, "2021 ·", " 25.400 km ·", " Pitalito-Huila", "img/Toyota.png");
+let auto2 = new Automovil("Mazda ", " 3", 650000000, "2019 ·", " 21.900 km ·", " Neiva-Huila", "img/mazda1.jpg");
+let auto3 = new Automovil("Mitsubishi", " 4x4", 1560000000, "2023 ·", " 0 km ·", " Bogotá", "img/mishi3.jpg");
+let auto4 = new Automovil("Chevrolet", " Blazer", 90000000, "2020 ·", " 12.364 km ·", " Florencia", "img/chevrolet.avif");
 /* alert (auto1.marca + " " + auto1.modelo); */
+cargarVehiculo(auto1);
+cargarVehiculo(auto2);
+cargarVehiculo(auto3);
+cargarVehiculo(auto4);
 
-window.addEventListener("load", function(event) {
 
+
+/* window.addEventListener("keydown", function(event) {
+    let busqueda = document.getElementById("inputBusqueda").value;
+    if(event.key == "Enter"){
+        let inputUser = busqueda.tolowerCase();
+        if(inputUser == "mazda"){
+            cargarVehiculo(auto2);
+        }
+        else if(inputUser == "Toyota"){
+             cargarVehiculo(auto1);
+        }
+    }
+});
 /* inputBusqueda.addEventListener("keydown", function(event) {
     if(event.key == "Enter"){ */
+function cargarVehiculo(auto) {
     let mainContent = document.getElementById("mainContent");
 
     /* Caja del producto */
@@ -31,7 +51,7 @@ window.addEventListener("load", function(event) {
     boxImg.setAttribute("class", "box-img");
     let imgAuto = document.createElement("img");
     boxImg.appendChild(imgAuto);
-    imgAuto.setAttribute("src", auto1.imagen);
+    imgAuto.setAttribute("src", auto.imagen);
     imgAuto.setAttribute("class", "img-auto")
 
     /* Caja para información */
@@ -40,14 +60,14 @@ window.addEventListener("load", function(event) {
     boxInfo.setAttribute("class", "box-info");
     let marca = document.createElement("label");
     boxInfo.appendChild(marca);
-    let textNodeMarca = document.createTextNode(auto1.marca + "" + auto1.modelo);
+    let textNodeMarca = document.createTextNode(auto.marca + "" + auto.modelo);
     marca.appendChild(textNodeMarca);
     marca.setAttribute("class", "marca");
 
     /* Precio */
     let  precio= document.createElement("label");
     boxInfo.appendChild(precio);
-    let precioStr = Intl.NumberFormat('de-DE').format(auto1.precio);
+    let precioStr = Intl.NumberFormat('de-DE').format(auto.precio);
     let textNodePrecio = document.createTextNode("$" + precioStr);
     precio.appendChild(textNodePrecio);
     precio.setAttribute("class", "precio")
@@ -55,7 +75,7 @@ window.addEventListener("load", function(event) {
     /* año */
     let  año = document.createElement("label");
     boxInfo.appendChild(año);
-    let añoStr = auto1.year;
+    let añoStr = auto.year;
     let textNodeAño = document.createTextNode(añoStr);
     año.appendChild(textNodeAño);
     año.setAttribute("class", "año")
@@ -63,7 +83,7 @@ window.addEventListener("load", function(event) {
     /* kilometros */
     let kilometros = document.createElement("label");
     boxInfo.appendChild(kilometros);
-    let kilometrosStr = auto1.kilometros;
+    let kilometrosStr = auto.kilometros;
     let textNodeKilometros = document.createTextNode(kilometrosStr);
     kilometros.appendChild(textNodeKilometros);
     kilometros.setAttribute("class", "kilometros")
@@ -71,7 +91,7 @@ window.addEventListener("load", function(event) {
     /* Ubicación */
     let ubicacion = document.createElement("label");
     boxInfo.appendChild(ubicacion);
-    let ubicacionStr = auto1.ubicacion;
+    let ubicacionStr = auto.ubicacion;
     let textNodeUbicacion = document.createTextNode(ubicacionStr);
     ubicacion.appendChild(textNodeUbicacion);
     ubicacion.setAttribute("class", "ubicacion")
@@ -88,6 +108,6 @@ window.addEventListener("load", function(event) {
     let lineaDiv = document.createElement("hr");
     boxProducto.appendChild(lineaDiv);
     lineaDiv.setAttribute("class", "linea-div");
+}
     
     /* } */
-});

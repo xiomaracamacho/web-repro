@@ -88,6 +88,7 @@ img{
 }
 .marca{
     display: block;
+    margin-top: 10px;
 }
 .precio{
     font-size: 1.5em;
@@ -109,6 +110,9 @@ img{
 .icono-corazon{
     color: rgb(30, 144, 255);
     font-size: 1.1em;
+}
+.linea-div{
+    margin-top: -60px;
 }
 /* Fuentes*/
 /* poppins-regular - latin */
