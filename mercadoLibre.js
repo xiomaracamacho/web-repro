@@ -1,113 +1,114 @@
-//cuando se trabaja con objetos, se construye la clase 
-let inputBusqueda = document.getElementById("inputBusqueda")
+let inputBusqueda = document.getElementById("inputBusqueda");
+
 class Automovil {
-    constructor(marca, modelo, precio, year, kilometros, ubicacion, imagen) {
+    constructor(marca, modelo, precio, imagen, fecha, kilometraje, ubicacion) {
         this.marca = marca;
         this.modelo = modelo;
         this.precio = precio;
-        this.year = year;
-        this.kilometros = kilometros;
-        this.ubicacion = ubicacion;
         this.imagen = imagen;
+        this.fecha = fecha;
+        this.kilometraje = kilometraje;
+        this.ubicacion = ubicacion;
+        this.favorito = false; // Inicialmente, el automóvil no es un favorito
     }
 }
-let auto1 = new Automovil("Toyota ", " TXL", 150000000, "2021 ·", " 25.400 km ·", " Pitalito-Huila", "img/Toyota.png");
-let auto2 = new Automovil("Mazda ", " 3", 650000000, "2019 ·", " 21.900 km ·", " Neiva-Huila", "img/mazda1.jpg");
-let auto3 = new Automovil("Mitsubishi", " 4x4", 1560000000, "2023 ·", " 0 km ·", " Bogotá", "img/mishi3.jpg");
-let auto4 = new Automovil("Chevrolet", " Blazer", 90000000, "2020 ·", " 12.364 km ·", " Florencia", "img/chevrolet.avif");
-/* alert (auto1.marca + " " + auto1.modelo); */
-cargarVehiculo(auto1);
-cargarVehiculo(auto2);
-cargarVehiculo(auto3);
-cargarVehiculo(auto4);
 
+let autos = [
+    new Automovil("Chevrolet", "Fox", 115000000, "img/chevrolet.avif", "2023", "10.000 km", "Bogotá - Colombia"),
+    new Automovil("Toyota", "TXL", 75000000, "img/Toyota.png", "2023", "30.000 km", "Cali - Colombia"),
+    new Automovil("Mitsubishi", "4x4", 95000000, "img/mishu.jpg", "2022", "70.000 km", "Medellín - Colombia"),
+    new Automovil("Mitsubishi", "Cami", 120000000, "img/mitsubishi1.jpg", "2021", "20.000 km", "Cali - Colombia"),
+    new Automovil("Mazda", "2023", 135000000, "img/mazda.jpg", "2022", "30.000 km", "Bogotá - Colombia"),
+    new Automovil("Mazda", "2024", 145000000, "img/mazda1.jpg", "2023", "15.000 km", "Medellín - Colombia"),
+    new Automovil("Mazda", "Corolla", 65000000, "img/mazda.jpg", "2022", "80.000 km", "Bogotá - Colombia")
+];
 
-
-/* window.addEventListener("keydown", function(event) {
-    let busqueda = document.getElementById("inputBusqueda").value;
-    if(event.key == "Enter"){
-        let inputUser = busqueda.tolowerCase();
-        if(inputUser == "mazda"){
-            cargarVehiculo(auto2);
-        }
-        else if(inputUser == "Toyota"){
-             cargarVehiculo(auto1);
-        }
-    }
-});
-/* inputBusqueda.addEventListener("keydown", function(event) {
-    if(event.key == "Enter"){ */
-function cargarVehiculo(auto) {
+// Función para mostrar los productos que coinciden con la búsqueda
+function mostrarProductos(terminoBusqueda) {
     let mainContent = document.getElementById("mainContent");
+    mainContent.innerHTML = ''; // Limpiar el contenido principal antes de mostrar resultados
 
-    /* Caja del producto */
-    let boxProducto = document.createElement("div");
-    mainContent.appendChild(boxProducto);
-    boxProducto.setAttribute("class", "box-producto");
+    autos.forEach(auto => {
+        if (auto.marca.toLowerCase().includes(terminoBusqueda.toLowerCase()) || auto.modelo.toLowerCase().includes(terminoBusqueda.toLowerCase())) {
+            // Código para mostrar el producto según los criterios de búsqueda
+            let boxproducto = document.createElement("div");
+            mainContent.appendChild(boxproducto);
+            boxproducto.setAttribute("class", "box-producto");
 
-    /* Caja para la imagen */
-    let boxImg = document.createElement("div");
-    boxProducto.appendChild(boxImg);
-    boxImg.setAttribute("class", "box-img");
-    let imgAuto = document.createElement("img");
-    boxImg.appendChild(imgAuto);
-    imgAuto.setAttribute("src", auto.imagen);
-    imgAuto.setAttribute("class", "img-auto")
+            let boximg = document.createElement("div");
+            boxproducto.appendChild(boximg);
+            boximg.setAttribute("class", "box-img");
 
-    /* Caja para información */
-    let boxInfo = document.createElement("div");
-    boxProducto.appendChild(boxInfo);
-    boxInfo.setAttribute("class", "box-info");
-    let marca = document.createElement("label");
-    boxInfo.appendChild(marca);
-    let textNodeMarca = document.createTextNode(auto.marca + "" + auto.modelo);
-    marca.appendChild(textNodeMarca);
-    marca.setAttribute("class", "marca");
+            let imgAuto = document.createElement("img");
+            boximg.appendChild(imgAuto);
+            imgAuto.setAttribute("src", auto.imagen);
+            imgAuto.setAttribute("class", "img-auto");
 
-    /* Precio */
-    let  precio= document.createElement("label");
-    boxInfo.appendChild(precio);
-    let precioStr = Intl.NumberFormat('de-DE').format(auto.precio);
-    let textNodePrecio = document.createTextNode("$" + precioStr);
-    precio.appendChild(textNodePrecio);
-    precio.setAttribute("class", "precio")
+            let boxInfo = document.createElement("div");
+            boxproducto.appendChild(boxInfo);
+            boxInfo.setAttribute("class", "box-info");
 
-    /* año */
-    let  año = document.createElement("label");
-    boxInfo.appendChild(año);
-    let añoStr = auto.year;
-    let textNodeAño = document.createTextNode(añoStr);
-    año.appendChild(textNodeAño);
-    año.setAttribute("class", "año")
+            let marcaL = document.createElement("label");
+            boxInfo.appendChild(marcaL);
+            let txtNodeMarca = document.createTextNode(auto.marca + " " + auto.modelo);
+            marcaL.appendChild(txtNodeMarca);
+            marcaL.setAttribute("class", "marca");
 
-    /* kilometros */
-    let kilometros = document.createElement("label");
-    boxInfo.appendChild(kilometros);
-    let kilometrosStr = auto.kilometros;
-    let textNodeKilometros = document.createTextNode(kilometrosStr);
-    kilometros.appendChild(textNodeKilometros);
-    kilometros.setAttribute("class", "kilometros")
+            let precio = document.createElement("label");
+            boxInfo.appendChild(precio);
 
-    /* Ubicación */
-    let ubicacion = document.createElement("label");
-    boxInfo.appendChild(ubicacion);
-    let ubicacionStr = auto.ubicacion;
-    let textNodeUbicacion = document.createTextNode(ubicacionStr);
-    ubicacion.appendChild(textNodeUbicacion);
-    ubicacion.setAttribute("class", "ubicacion")
+            let precioFormateado = auto.precio.toLocaleString();
+            let txtNodePrecio = document.createTextNode("$" + precioFormateado);
+            precio.appendChild(txtNodePrecio);
+            precio.setAttribute("class", "precio");
 
-    /* Icono corazón */
-    let boxCorazon = document.createElement("div");
-    boxImg.appendChild(boxCorazon);
-    let iconoCorazon = document.createElement("i");
-    boxCorazon.appendChild(iconoCorazon);
-    boxCorazon.setAttribute("class", "box-corazon"); 
-    iconoCorazon.setAttribute("class", "icono-corazon fa-regular fa-heart");
+            let infoAdicional = document.createElement("label");
+            boxInfo.appendChild(infoAdicional);
 
-    /* Linea divisora */
-    let lineaDiv = document.createElement("hr");
-    boxProducto.appendChild(lineaDiv);
-    lineaDiv.setAttribute("class", "linea-div");
+            // Utilizamos los valores individuales de fecha, kilometraje y ubicación para cada automóvil
+            let infoText = document.createTextNode(`${auto.fecha} - ${auto.kilometraje},  ${auto.ubicacion}`);
+            infoAdicional.appendChild(infoText);
+            infoAdicional.setAttribute("class", "info-adicional");
+
+            let boxCorazon = document.createElement("div");
+            boximg.appendChild(boxCorazon);
+            boxCorazon.setAttribute("class", "box-corazon");
+
+            let iconoCorazon = document.createElement("i");
+            boxCorazon.appendChild(iconoCorazon);
+            iconoCorazon.setAttribute("class", "icon-corazon fa-regular fa-heart");
+
+            // Agregamos un evento de clic al icono del corazón
+            boxCorazon.addEventListener("click", function () {
+                if (auto.favorito) {
+                    iconoCorazon.classList.remove("fas");
+                    iconoCorazon.classList.add("far");
+                    auto.favorito = false;
+                } else {
+                    iconoCorazon.classList.remove("far");
+                    iconoCorazon.classList.add("fas");
+                    auto.favorito = true;
+                }
+            });
+
+            let lineaDiv = document.createElement("hr");
+            boxproducto.appendChild(lineaDiv);
+            lineaDiv.setAttribute("class", "linea-div");
+        }
+    });
 }
-    
-    /* } */
+
+window.addEventListener("load", function () {
+    mostrarProductos(''); // Mostrar todos los productos al cargar la página
+
+    inputBusqueda.addEventListener('input', function () {
+        mostrarProductos(inputBusqueda.value);
+    });
+});
+
+//Filtros
+function cargarFiltro(){
+let boxFiltro = document.createElement("div");
+mainContent.appendChild(boxFiltro);
+boxFiltro.setAttribute("class", "box-filtro");
+}
