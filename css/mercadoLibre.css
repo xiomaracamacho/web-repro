@@ -160,36 +160,40 @@ width: 100%;
         width: 120px;
         height: 60px;
         border-radius: 15px;
-        background-color: rgb(142, 114, 114);
         display: flex;
         align-items: center;
         position: relative;
+        background-color: white;
+        cursor: pointer;
     }
-
-    .button-toggle-off{
-        width:54px;
-        height: 54px;
-        border-radius: 27px;
-        background-color: black;
-        padding-left: 3px;
+    .box-toggle-off{
+        background-color: white;
     }
-
     .box-toggle-on{
         background-color: blue;
     }
-    .box-toggle-off:hover{
-        background-color: rgb(152, 152, 173);
+    .box-toggle:hover{
+        background-color: blue;
     }
-
-    .button-toggle-off{
+    .box-toggle:hover .button-toggle{
+        left: 63px;
+    }  
+    .button-toggle{
         width:54px;
         height: 54px;
         border-radius: 27px;
-        background-color: black;
+        background-color: white;
         padding-left: 3px;
         position: absolute;
-        right: 3px;
+        left: 3px;
+        transition: left 300ms;
+    }
+    .button-toggle-off{
+        left:3px;
+        transition: left 300ms;
+    }
+    .button-toggle-on{
+        left: 63px;
     }
 
-    
 }

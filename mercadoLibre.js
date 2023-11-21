@@ -17,7 +17,7 @@ let autos = [
     new Automovil("Chevrolet", "Fox", 115000000, "img/chevrolet.avif", "2023", "10.000 km", "Bogotá - Colombia"),
     new Automovil("Toyota", "TXL", 75000000, "img/Toyota.png", "2023", "30.000 km", "Cali - Colombia"),
     new Automovil("Mitsubishi", "4x4", 95000000, "img/mishu.jpg", "2022", "70.000 km", "Medellín - Colombia"),
-    new Automovil("Mitsubishi", "Cami", 120000000, "img/mitsubishi1.jpg", "2021", "20.000 km", "Cali - Colombia"),
+    new Automovil("Mitsubishi", "Full", 120000000, "img/mitsubishi1.jpg", "2021", "20.000 km", "Cali - Colombia"),
     new Automovil("Mazda", "2023", 135000000, "img/mazda.jpg", "2022", "30.000 km", "Bogotá - Colombia"),
     new Automovil("Mazda", "2024", 145000000, "img/mazda1.jpg", "2023", "15.000 km", "Medellín - Colombia"),
     new Automovil("Mazda", "Corolla", 65000000, "img/mazda.jpg", "2022", "80.000 km", "Bogotá - Colombia")
@@ -112,3 +112,21 @@ let boxFiltro = document.createElement("div");
 mainContent.appendChild(boxFiltro);
 boxFiltro.setAttribute("class", "box-filtro");
 }
+/*toggle*/
+let boxToggle = document.getElementById("boxToggle");
+let buttonToggle = document.getElementById("buttonToggle");
+
+boxToggle.addEventListener("click", () => {
+ if(boxToggle.classList.contains("box-toggle-off")){
+    boxToggle.classList.add("box-toggle-on");
+    boxToggle.classList.remove("box-toggle-off");
+    buttonToggle.classList.add("button-toggle-on");
+    buttonToggle.classList.remove("button-toggle-off");
+ }
+ else{
+    boxToggle.classList.remove("box-toggle-on");
+    boxToggle.classList.add("box-toggle-off");
+    buttonToggle.classList.remove("button-toggle-on");
+    buttonToggle.classList.add("button-toggle-off");
+ }
+})
