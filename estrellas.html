@@ -1,19 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Estrellas</title>
-    <link rel="stylesheet" href="icons/all.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* Estilos para las estrellas */
+    .rating {
+      text-align: center;
+      font-size: 30px;
+    }
+
+    .rating > span {
+      display: inline-block;
+      position: relative;
+      width: 1.1em;
+      cursor: pointer;
+    }
+
+    .rating > span:before {
+      content: "\2605";
+      position: absolute;
+    }
+ 
+  </style>
 </head>
 <body>
-    <span>Puntuación</span>
-    <input type="text"><br>
-    <input type="button" value="Gráficar"><br>
-    <i class="fa-solid fa-star"></i>
-    <i class="fa-solid fa-star"></i>
-    <i class="fa-solid fa-star-half-stroke"></i>
-    <i class="fa-regular fa-star"></i>
-    <i class="fa-regular fa-star"></i>
+
+  <div class="rating" id="rating">
+    <span data-value="1"></span>
+    <span data-value="2"></span>
+    <span data-value="3"></span>
+    <span data-value="4"></span>
+    <span data-value="5"></span>
+  </div>
+
+  <button onclick="submitRating()">Enviar</button>
+
+  <script>
+    let selectedRating = 0;
+
+    document.querySelectorAll('.rating > span').forEach((star) => {
+      star.addEventListener('click', () => {
+        selectedRating = parseInt(star.getAttribute('data-value'));
+        highlightStars(selectedRating);
+      });
+    });
+
+    function highlightStars(rating) {
+      document.querySelectorAll('.rating > span').forEach((star) => {
+        const value = parseInt(star.getAttribute('data-value'));
+        star.style.color = value <= rating ? 'gold' : 'gray';
+      });
+    }
+
+    function submitRating() {
+      if (selectedRating > 0) {
+        alert('Calificación enviada: ' + selectedRating);
+        // Aquí puedes enviar la calificación a tu servidor o realizar otras acciones.
+      } else {
+        alert('Por favor, selecciona una calificación antes de enviar.');
+      }
+    }
+  </script>
+
 </body>
 </html>
