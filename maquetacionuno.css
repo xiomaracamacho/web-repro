@@ -30,11 +30,9 @@ body{
     width: 30%;
 }
 .links{
-<<<<<<< HEAD
+
     margin-left: 300px;
-=======
     margin-left: 200px;
->>>>>>> 997ee924f35d89329bda801e9657c4d825896a28
     margin-top: 30px;
     font-size: 1em;
     display: flex;
@@ -46,10 +44,7 @@ i{
 .img-article{
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
-<<<<<<< HEAD
 
-=======
->>>>>>> 997ee924f35d89329bda801e9657c4d825896a28
 /* .main-img-box{
     height: 500px;
     width: 100%;
@@ -63,16 +58,10 @@ i{
 }
  */
 img{border-radius: 10PX;
-<<<<<<< HEAD
+
     width: 100%; 
 }
 
-=======
-    width: 100%;
-    
-  
-}
->>>>>>> 997ee924f35d89329bda801e9657c4d825896a28
 .text-content{
     text-align: center;
     margin-left: 40%;

@@ -142,3 +142,28 @@ boxToggle.addEventListener("click", () => {
         buttonToggle.classList.add("button-toggle-off");
     }
 });
+
+let selectedRating = 0;
+
+document.querySelectorAll('.rating > span').forEach((star) => {
+  star.addEventListener('click', () => {
+    selectedRating = parseInt(star.getAttribute('data-value'));
+    highlightStars(selectedRating);
+  });
+});
+
+function highlightStars(rating) {
+  document.querySelectorAll('.rating > span').forEach((star) => {
+    const value = parseInt(star.getAttribute('data-value'));
+    star.style.color = value <= rating ? 'gold' : 'gray';
+  });
+}
+
+function submitRating() {
+  if (selectedRating > 0) {
+    alert('Calificación enviada: ' + selectedRating);
+    // Aquí puedes enviar la calificación a tu servidor o realizar otras acciones.
+  } else {
+    alert('Por favor, selecciona una calificación antes de enviar.');
+  }
+}
