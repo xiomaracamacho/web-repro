@@ -1,11 +1,11 @@
 let calificaciones = {
     
     calificacion1: {
-      input: document.getElementById("calificacion-1"),
+      input: document.getElementById("calificacion-5"),
       barra: document.getElementById("barra-1"),
     },
     calificacion2: {
-      input: document.getElementById("calificacion-2"),
+      input: document.getElementById("calificacion-4"),
       barra: document.getElementById("barra-2"),
     },
     calificacion3: {
@@ -13,11 +13,11 @@ let calificaciones = {
       barra: document.getElementById("barra-3"),
     },
     calificacion4: {
-      input: document.getElementById("calificacion-4"),
+      input: document.getElementById("calificacion-2"),
       barra: document.getElementById("barra-4"),
     },
     calificacion5: {
-      input: document.getElementById("calificacion-5"),
+      input: document.getElementById("calificacion-1"),
       barra: document.getElementById("barra-5"),
     },
   };
