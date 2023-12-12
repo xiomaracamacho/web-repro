@@ -32,6 +32,9 @@ input[type="button"] {
     font-weight: 600;
     cursor: pointer;
 }
+input[type="button"]:hover {
+    background-color: rgb(4, 47, 89);
+}
 
 .barra-progreso {
     width: 25%;
@@ -52,5 +55,6 @@ input[type="button"] {
     font-size: 1.5em;
     color: orange;
     margin-right: 5px; 
+    cursor: pointer;
 }
 
